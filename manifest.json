@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Purple Building Theory",
+    "version": "0.1",
+    "description": "Makes Todoist tasks and other page elements really garishly colored.",
+    "icons": {
+        "48": "icons/theory-48.png"
+    },
+    "content_scripts": [{
+            "matches": ["*://*.todoist.com/*", "*://*.mozilla.org/*"],
+            "js": ["theory.js"]
+        }
+    ]
+}
